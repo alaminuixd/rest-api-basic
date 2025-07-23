@@ -14,13 +14,13 @@
   {
     "name": "Sakib Al Hasan",
     "country": "Bangladeh",
-    "rank": 4,
+    "rank": "4",
     "id": "932ac1ac-7f8f-4e0f-9ba8-65dcf7706a7d"
   },
   {
     "id": "382fb9e6-f55f-4faf-93e5-886711f42e61",
     "name": "Mehedi Hasan Miraz",
-    "country": "Bangladeshi",
-    "rank": "5"
+    "country": "Bangladesh",
+    "rank": "3"
   }
 ]

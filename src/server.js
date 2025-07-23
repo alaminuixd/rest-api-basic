@@ -62,14 +62,15 @@ app.put("/:id", async (req, res) => {
 // PATCH to update the doc partially.
 app.patch("/:id", async (req, res) => {
   const id = req.params.id;
+  const { name, country, rank } = req.body;
   try {
     const data = await fs.readFile(playersDB, "utf-8");
     const players = JSON.parse(data);
     const player = players.find((p) => p.id === id);
     if (player) {
-      player.name = req.body.name || player.name;
-      player.country = req.body.country || player.country;
-      player.rank = req.body.rank || player.rank;
+      player.name = name || player.name;
+      player.country = country || player.country;
+      player.rank = rank || player.rank;
       await fs.writeFile(playersDB, JSON.stringify(players, null, 2));
       res.status(200).json(player);
     } else {
