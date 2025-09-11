@@ -27,6 +27,7 @@ app.delete("/:id", async (req, res) => {
 
     await fs.writeFile(playersDB, JSON.stringify(updatedPlayers, null, 2));
     res.status(200).json({ message: "Player deleted successfully" });
+    // res.status(204).send();
   } catch (error) {
     res.status(500).json({ error: "Failed to delete the player" });
   }
@@ -80,6 +81,7 @@ app.patch("/:id", async (req, res) => {
     res.status(500).json({ error: "Failed to update the player" });
   }
 });
+
 app.get("/:id", async (req, res) => {
   const { id } = req.params;
   try {
@@ -95,6 +97,7 @@ app.get("/:id", async (req, res) => {
     res.status(500).json({ error: "Failed to fetch the player." });
   }
 });
+
 app.post("/", async (req, res) => {
   const player = {
     ...req.body,

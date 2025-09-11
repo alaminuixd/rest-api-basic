@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Al Amin Khan",
+    "age": 38,
+    "father": "Syed Ahmed Khan",
+    "mother": "Mamataj Begum"
+  },
+  {
+    "name": "Ruhul Amin Khan",
+    "age": 33,
+    "father": "Syed Ahmed Khan",
+    "mother": "Mamataj Begum"
+  },
+  {
+    "name": "Syeda Sultana Khan",
+    "age": 46,
+    "father": "Syed Ahmed Khan",
+    "mother": "Mamataj Begum"
+  },
+  {
+    "name": "Sabrina Amin",
+    "age": 24,
+    "father": "Selim Mia",
+    "mother": "Monjuara Begum"
+  },
+  {
+    "name": "Abrar Syed Khan",
+    "age": 5,
+    "father": "Al Amin Khan",
+    "mother": "Sabraina Amin"
+  }
+]
